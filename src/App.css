@@ -1,0 +1,163 @@
+.actions {
+    display: flex;
+    gap: .4em;
+}
+
+.actions button,
+nav a {
+    background-color: #808080;
+    color: aliceblue;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: .4em;
+    width: 100%;
+}
+
+.actions button svg {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav {
+    gap: .3em;
+}
+
+nav a {
+    padding: .4em;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+nav a:hover {
+    opacity: .7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.actions button:hover {
+    opacity: .8;
+}
+
+.form-container {
+    display: grid;
+    align-items: center;
+    max-width: 1200px;
+    grid-template-columns: 70% 30%;
+    margin: 0 auto;
+}
+
+select {
+    padding: .4em 1em;
+    background-color: #343541;
+    color: white;
+}
+
+.select-box {
+    display: flex;
+    gap: .4em;
+    align-items: center;
+}
+
+
+.home {
+    display: grid;
+    padding: 1em;
+    gap: 2em;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.home img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+
+
+.home>div {
+    align-self: center;
+}
+
+.home p {
+    font-size: .9rem;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: .4em;
+}
+
+.home .btn {
+    margin-top: 10px;
+    background-color: #343541;
+    color: white;
+    text-decoration: none;
+    padding: .4em;
+    display: inline-block;
+}
+
+.home .btn:hover {
+    opacity: .5;
+    transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50%;
+    animation: rotation 1s linear infinite;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:960px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .select-box {
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
