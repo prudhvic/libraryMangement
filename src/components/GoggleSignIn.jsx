@@ -4,12 +4,13 @@ import { useEffect } from 'react';
 import { useBooksContext } from '../context/BooksContext';
 
 const GoggleSignIn = (e) => {
-    let { loginWithRedirect, loginWithPopup, logout, isAuthenticated, user } = useAuth0()
+    let { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
     let { setAuth, auth } = useBooksContext()
     let signIn = async () => {
+        console.log("auth")
         await loginWithRedirect()
 
-
+        console.log("after auth")
     }
     let signout = async () => {
         await logout({ logoutParams: { returnTo: window.location.origin } })

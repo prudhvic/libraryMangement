@@ -17,7 +17,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/books' element={auth ? <Books /> : navigate("/")} />
+        <Route path='/books' element={<Books />} />
         <Route path='/books/:id' element={<BookDetails />} />
       </Routes>
     </main>

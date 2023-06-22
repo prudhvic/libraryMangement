@@ -14,11 +14,11 @@ const Home = () => {
             navigate("/")
         }
     }
-    // useEffect(() => {
-    //     if (auth) {
-    //         navigate("/books")
-    //     }
-    // }, [auth])
+    // // useEffect(() => {
+    // //     if (auth) {
+    // //         navigate("/books")
+    // //     }
+    // // }, [auth])
     return (
         <div className='home'>
             <img src='https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60' />

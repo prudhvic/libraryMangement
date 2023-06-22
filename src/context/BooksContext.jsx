@@ -21,9 +21,7 @@ export default function BooksContextProvider({ children }) {
         try {
             let response = await fetch(url)
             let data = await response.json()
-            console.log(data)
             let items = [...data.items].sort((a, b) => a.volumeInfo.authors[0] > b.volumeInfo.authors[0] ? 1 : -1)
-            console.log(items)
             if (data.items) {
                 setIsLoading(false)
 
@@ -39,7 +37,6 @@ export default function BooksContextProvider({ children }) {
         fetchBooks(query)
     }, [query])
     let searchQuery = (q) => {
-        console.log(q)
         setQuery(q)
     }
     let handleSort = (e) => {
@@ -47,7 +44,6 @@ export default function BooksContextProvider({ children }) {
         let name = e.target.value;
         if (name == "title") {
             let items = [...books].sort((a, b) => a.volumeInfo.title > b.volumeInfo.title ? 1 : -1)
-            console.log(items)
             setFilterBooks(items)
         }
         if (name === "publish_date") {
@@ -56,12 +52,10 @@ export default function BooksContextProvider({ children }) {
                 let date2 = new Date(b.volumeInfo.publishedDate)
                 return date1 - date2
             })
-            console.log(items)
             setFilterBooks(items)
         }
         if (name == "author") {
             let items = [...books].sort((a, b) => a.volumeInfo.authors[0] > b.volumeInfo.authors[0] ? 1 : -1)
-            console.log(items)
             setFilterBooks(items)
         }
     }
