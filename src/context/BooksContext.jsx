@@ -10,6 +10,10 @@ export default function BooksContextProvider({ children }) {
     let [isLoading, setIsLoading] = useState(false)
     let [auth, setAuth] = useState(localauth)
     let fetchBooks = async (query) => {
+        if (!query.length || !query.length > 2) {
+            alert("please enter above 2 characters")
+            return;
+        }
         let key = "AIzaSyCoy3plWznRJpyQMvmdXcDFL-Ov0GWG1E0";
         key = import.meta.env.VITE_API_KEY
         setIsLoading(true)
