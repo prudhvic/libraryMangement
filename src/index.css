@@ -135,6 +135,14 @@ input:focus {
 
 }
 
+@media (max-width:960px) {
+  .book-detail {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
 .book-detail img {
   width: 400px;
   height: 400px;
