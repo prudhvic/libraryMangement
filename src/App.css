@@ -2,7 +2,12 @@
     display: flex;
     gap: .4em;
 }
-
+.result{
+/* position: absolute; */
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 1em;
+}
 .actions button,
 nav a {
     background-color: #808080;

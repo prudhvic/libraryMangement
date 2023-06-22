@@ -12,10 +12,11 @@ const Books = () => {
             navigate("/")
         }
     }, [auth])
-    
+
     return (
         <>
             <Search />
+            <p className='result'>{books.length} Results</p>
             {!isLoading ? <div className='books-container'>{
                 books.map((book) => <Book book={book} key={book.id} />)
             }</div> : (<span className="loader"></span>)}
