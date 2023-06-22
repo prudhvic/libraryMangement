@@ -2,12 +2,14 @@
     display: flex;
     gap: .4em;
 }
-.result{
-/* position: absolute; */
-    margin:0 auto;
+
+.result {
+    /* position: absolute; */
+    margin: 0 auto;
     max-width: 1200px;
     padding: 1em;
 }
+
 .actions button,
 nav a {
     background-color: #808080;
@@ -81,7 +83,7 @@ select {
     grid-template-columns: 2fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
-
+    margin-top: 3em;
 }
 
 .home img {
@@ -152,6 +154,7 @@ nav {
 @media (max-width:960px) {
     .home {
         grid-template-columns: 1fr;
+        margin-top: 1em;
     }
 
     .form-container {
@@ -162,7 +165,12 @@ nav {
     .select-box {
         margin: 0 auto;
     }
-    h1{
+
+    h1 {
         font-size: 1.5rem;
     }
+}
+
+img {
+    border-radius: 6px;
 }
