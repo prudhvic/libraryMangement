@@ -161,8 +161,9 @@ nav {
     height: 100vh;
     display: flex;
     justify-content: center;
+    z-index: 1000;
     align-items: center;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .modal>div {
@@ -194,7 +195,7 @@ nav {
         margin-top: 1em;
     }
 
-    
+
 
     .actions button {
         font-size: .9rem;

@@ -138,10 +138,23 @@ input:focus {
 @media (max-width:960px) {
   .book-detail {
     grid-template-columns: 1fr;
-    padding: 2em;
+    padding: 6px;
+    width: 100%;
+
   }
 
- 
+  .book-detail .book-content {
+    padding: 10px;
+  }
+
+  .book-detail .book-content h2 {
+    margin: 5px;
+  }
+
+  .book-detail .book-content p {
+    font-size: .8ch;
+    margin: 5px;
+  }
 
 }
 
