@@ -2,7 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { FcGoogle } from "react-icons/fc";
 import { useEffect } from 'react';
 import { useBooksContext } from '../context/BooksContext';
-
+import { GoSignOut } from "react-icons/go";
 const GoggleSignIn = (e) => {
     let { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
     let { setAuth, auth } = useBooksContext()
@@ -28,7 +28,7 @@ const GoggleSignIn = (e) => {
         <div className='actions'>
 
             {!auth && <button onClick={signIn}>SignUp <FcGoogle /></button>}
-            {auth && <button onClick={signout}>signOut</button>}
+            {auth && <button onClick={signout}>signOut<GoSignOut /></button>}
         </div>
     )
 }
