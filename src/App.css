@@ -3,6 +3,10 @@
     gap: .4em;
 }
 
+a {
+    text-decoration: none;
+}
+
 .result {
     /* position: absolute; */
     margin: 0 auto;
@@ -190,6 +194,11 @@ nav {
         margin-top: 1em;
     }
 
+    .actions button {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
     .form-container {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -200,7 +209,7 @@ nav {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
